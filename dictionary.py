@@ -26,6 +26,7 @@ def getYoudao(word):
 if __name__ == '__main__':
     while True:
         word = input('>>>')
+        word = word.replace(' ','%20')
         meanings = getYoudao(word)
         for meaning in meanings:
             meaning = meaning.split('；')
